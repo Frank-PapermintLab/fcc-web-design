@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">My First Test</h1>
+    <p id="description"> This is my first Certification Project</p>
+    
+    <form id="survey-form">
+
+      <p>
+      <label id="name-label">Enter your name here (required):</label>
+      <input type="text" id="name"  required placeholder="John Pork">
+      </p>
+
+      <p>
+      <label id="email-label">Enter your email here (required):</label>
+      <input type="email" id="email" required placeholder="email@email.com">
+      </p>
+
+      <p>
+      <label id="number-label">Enter your phone number here:</label>
+      <input type="number" id="number" min="0000000000" max="9999999999" placeholder="5555555555">
+      </p>
+
+      <p>
+      <label id="dropdown-label">What is your favourite feature?</label>
+      <select id=dropdown name="favorite">
+        <option value="projects">Projects</option>
+        <option value="theory">Theory</option>
+      </select>
+      </p>
+
+      <p>Would you recommend FreeCodeCamp to a friend?
+      <label><input type="radio" name="recommend" value="yes">Yes</label>
+      <label><input type="radio" name="recommend" value="no">No</label>
+      </p>
+
+      <p>How many features have you tried out?
+      <label><input type="checkbox" name="features" value="courses">Courses</label>
+      <label><input type="checkbox" name="features" value="tests">Tests</label>
+      <label><input type="checkbox" name="features" value="Videos">Videos</label>
+      </p>
+      
+      <p>Do you have any comments?</p>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here!">
+      </textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
